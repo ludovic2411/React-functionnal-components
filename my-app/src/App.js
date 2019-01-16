@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import HelloComponent from './HelloClass';
+import HelloFunctionnal from './HelloFunc';
 
 class App extends Component {
   render() {
@@ -17,7 +18,8 @@ class App extends Component {
           </a>
         </header>
         <div className="App-header">
-          <HelloComponent name="Ludo"/>
+          <HelloComponent/>
+          <HelloFunctionnal name="Ludovic"/>
         </div>
       </div>
     );
