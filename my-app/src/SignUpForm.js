@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import { TextField, Button, Grid } from "@material-ui/core";
 import axios from 'axios';
@@ -14,6 +14,7 @@ class SignupForm extends React.Component {
   };
 
   getEmailError = email => {
+    // eslint-disable-next-line
     const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     const isValidEmail = emailRegex.test(email);
