@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import HelloComponent from './HelloClass';
 import HelloFunctionnal from './HelloFunc';
+import SignupForm from './SignUpForm';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
         <div className="App-header">
           <HelloComponent/>
           <HelloFunctionnal name="Ludovic"/>
+          <SignupForm/>
         </div>
       </div>
     );
